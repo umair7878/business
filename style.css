@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+   
+}
+#porfolio:link{
+    color:#ffff;
+}
+
+:root{
+    --blues:#155BD5;
+    --li-white:#afabab;
+    --grey:#cecccc;
+    --md-grey:#9b9c9e;
+    
+}
+
+.container{
+    padding: 0 0 10% 0;
+    height: 100vh;    
+    background-color:var(--blues)  ;
+ 
+}
+.navbar{   
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: var(--blues);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container1{
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px;
+    
+}
+.list  { 
+    width: 45%;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.link{
+    color:var(--li-white);
+}
+.link:hover , .active{
+    color: #ffffff;
+}
+main{
+    width: 100%;
+    
+}
+.main{
+    padding: 160px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+.main-left {
+    width: 46%;
+    font-size: 20px;
+}
+.main-left p{
+    padding-top: 30px;
+    font-size: 16px;
+    color: var(--li-white);
+}
+
+.main-right{
+    width: 42%;
+}
+.main-right img{
+    border-radius: 10px;
+    width: 480px;
+}
+.button{
+
+    margin-top: 40px;
+}
+.button .main-btn{
+    width: 200px;
+    border-radius:3px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 12px 24px; 
+    border: 1px solid white;
+    color: var(--blues);
+    font-size: 16px;
+    line-height: 20px;  
+    letter-spacing: .05em; 
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+.button .main-btn:hover{
+    background-color: var(--blues);
+    color: #ffffff;
+}
+.section{
+    padding-top: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sec-left{
+    width: 30%;
+}
+.sec-left img{
+    width: 450px;
+}
+.sec-right{
+    width: 40%;
+}
+.sec-right h3{
+    font-size: 16px;
+    padding-left: 30px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.sec-right h3::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background-color: var(--blues);
+    height: 1px;
+    width: 20px;
+    margin-top: -1px;
+}
+.sec-right h1{
+    font-size: 34px;
+
+}
+
+.sec-container{
+    border-radius: 3px;
+    padding:16px  25px;
+    background-color: #DDDDDD;
+    margin: 10px 0  ;
+}
+.sec-button {
+    margin: 0 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    text-transform: capitalize;
+    border: none;
+    background-color: #ffffff;
+    color: #000;
+    cursor: pointer;
+    border-radius: 2px;
+    font-weight: 600;
+}
+.sec-button:hover{
+    color: var(--blues);
+}
+.sec-button:focus{
+    background-color: var(--blues);
+    color: #ffffff;
+}
+.icon-size{
+    font-size: 2.8em;
+    color:var(--blues);
+    border: 1px solid var(--blues);
+    padding: 20px;
+    border-radius: 50%;
+
+}
+.article{
+    padding-top: 100px ; 
+    display: flex;
+    justify-content: center;
+
+}
+.sec-service{
+    width: 85%;
+    background: var(#ffffff);
+    
+}
+
+.section-box{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding-bottom: 40px;
+}
+.section-box h5{
+    padding: 7px 30px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 15px;
+    color: var(--blues);
+    border: 2px solid var(--blues);
+    border-radius: 30px;
+}
+h5{
+    text-transform: capitalize;
+    font-size: 18px ;
+ 
+    
+}
+figure p{
+    padding: 10px 0;
+    font-size: 14px;
+    
+}
+h1{
+    font-size: 30px;
+    padding: 10px 0px;
+}
+.service-offer .row{
+    display: flex;
+    padding: 5px;
+}
+.service-offer .col{
+    margin: 5px;
+    padding: 30px 40px; 
+    text-align: left;
+    width: 33.333%;
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+}
+.service-offer .col:hover {
+    transition:all 0.7s ;
+    box-shadow: 4px 5px 10px var(--grey);
+}
+.fig-h4{
+    padding: 40px 0 18px 0 ;
+}
+.video-sec{
+    margin: 90px 0;
+    padding: 20px 0 60px 0;
+    background-color: #f1f0f1;
+}
+.video-demo{
+    padding-top: 50px ;
+    display: flex;
+    justify-content: center;
+   
+}
+.video-demo video{
+    z-index: 1;
+    border-radius: 10px;
+    width: 80%;
+ 
+}
+.work-button{
+    text-align: center;
+}
+.btn-portfolio{
+    text-transform: uppercase;
+    border: none;
+    color: var(--md-grey);
+    background: none;
+    font-size: 15px;
+    display: inline-block;
+    font-weight: 600;  
+    padding: 10px 40px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s  ;
+}
+.btn-portfolio:hover::before , .btn-portfolio:focus::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;  
+    border-radius: 30px;
+    background: var(--blues);
+    height: 4px;
+    width: 100%;
+    
+    z-index: -1;
+}
+.btn-portfolio:hover{
+    color: var(--blues);
+}
+.btn-portfolio:focus{
+    color: var(--blues);
+}
+.description{
+    width: 88%;
+    margin:10px auto;
+}
+.dsp-row{
+    width: 100%;
+    overflow: hidden;
+}
+.dsp-col{
+    
+    padding: 10px;
+    display: flex; 
+    justify-content: center;
+     align-items: center;
+
+}
+.dsp-col figure{
+    width: 33.333%;
+    padding: 4px;
+    
+}
+.dsp-col figcaption{
+        padding: 4px;
+
+    }
+.dsp-col figure img{
+    border-radius: 10px;
+    width: 94%;
+}
+.pricing{
+    margin-top: 100px;
+}
+.price-card{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    
+}
+.price{
+    border: 1px solid #dddd;
+    width: 31.333%;
+    border-radius: 10px;
+    padding: 20px;
+}
+.price-head p{
+    color: grey;
+    padding: 28px 0;
+}
+.price-value{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+.price-value span{
+    color: #666464;
+    font-weight: 400;
+    font-size: 20px;
+}
+.price-value .dollar{   
+    position: relative;
+    left: 0;
+    bottom: 40px;
+}
+.main-btn {
+
+    margin: 20px auto 35px auto;
+    width: 85%;
+    border-radius: 4px;
+    background-color: var(--blues);    
+    padding: 10px ;
+}
+.main-btn a {
+    color: #ffffff;
+
+}
+.main-btn:hover{
+    box-shadow: 5px 5px 4px   #DDDDDD;
+}
+
+.price-button{
+    margin: 20px auto 35px auto;
+    width: 85%;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid var(--blues);
+    padding: 10px ;
+}
+.price-button:hover{
+    background-color: var(--blues);
+    color: #ffff;
+   
+}
+.price-button a:hover{
+    color: #fff;
+}
+.price-button , .main-btn{
+    color: var(--blues);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.price-card ul{
+    padding: 0 0 0 20px;
+    text-align: left;
+}
+.price-card li{
+    letter-spacing: 0.02em;
+}
+.price-card  .check-icon {
+    padding: 0 8px 0 0 ;
+    color: var(--blues);
+}
+.icon-color{
+    padding: 0 8px 0 0 ;
+    color: #666464;
+}
+.main-card{
+    box-shadow: 5px 5px 10px  var(--md-grey);
+}
+.price:hover{
+    box-shadow: 5px 5px 15px  var(--md-grey);
+
+}
+.content{
+    height: 220px;
+    padding: 60px 0 ;
+    background-color: var(--blues);
+    margin: 100px 0;
+}
+
+.content h1{
+    color: #ffff;
+    font-size: 30px;
+}
+
+.circle{
+    background-color: skyblue;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0.1;
+    background: linear-gradient(#ffff, rgb(225, 234, 238) 90%);
+    position: relative;    
+    left: 313px;
+    bottom: 224px;
+}
+footer{
+       
+    overflow: hidden;
+    background-color: #155BD5;
+}
+
+
+.foo-content{
+    width: 87%;
+    margin: auto;
+}
+.foo-row{
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.foo-col{ 
+    width: 25%;
+}
+.foo-col h4{
+    padding: 25px 0 40px 0 ;
+}
+.foo-col li{
+    margin-bottom: 12px;
+}
+.foo-col a{
+    display: block;
+    font-size: 16px;
+    color: white;
+}
+.foo-h4{
+    padding: 15px 0 0 0 ;
+}
+.foo-col span{
+    font-size: 12px;
+    color: #ffff;
+}
